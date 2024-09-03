@@ -1,0 +1,519 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
+body {
+  position: relative;
+}
+
+/*! ===== GLOBAL CSS=====*/
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.sec-space {
+  padding: 4rem 0;
+}
+
+.w-btn {
+  margin-left: 40px;
+  background-color: #fff;
+  color: #1f4a40;
+  border: none;
+  outline: none;
+  padding: 9px 30px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.g-btn {
+  background-color: #51a995;
+  color: #fff;
+  padding: 9px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.extra-space {
+  padding-top: 8rem;
+}
+
+.obj-width {
+  max-width: 1700px;
+  margin: auto;
+}
+
+/*! ===== NAVBAR =====*/
+
+header {
+  background-color: #1f4a40;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar .logo {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.navbar > a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+nav #menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#menu li a {
+  color: #fff;
+  margin-left: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#bar {
+  color: #fff;
+  display: none;
+}
+
+/*! ===== HERO SECTION =====*/
+
+.hero {
+  background-color: #1f4a40;
+}
+
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+}
+
+.h-left {
+  width: 45%;
+  color: #fff;
+}
+
+.h-left p {
+  padding: 1.5rem 0;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  width: 100%;
+  line-height: 4rem;
+  border-radius: 35px;
+  padding: 0 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+.search a {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.h-right {
+  width: 45%;
+}
+
+.h-right img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*! ===== FEATURES SECTION =====*/
+.features .fe-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.features .fe-box div {
+  width: 200px;
+}
+
+.features .fe-box img {
+  width: 50px;
+  margin-top: 3rem;
+}
+
+/*! ===== JOB LISTING SECTION =====*/
+.jobs .job-id {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.jobs .job-id li {
+  padding: 20px 40px;
+  cursor: pointer;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.jobs .job-id li.active {
+  background-color: #51a995;
+  color: #fff;
+}
+
+.jList.delete {
+  display: none;
+}
+
+.jList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem;
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-items: start;
+  cursor: pointer;
+  color: #000;
+  padding: 2rem 2rem;
+}
+
+.jList:hover {
+  background: #ecf1ee;
+}
+
+.jList img {
+  width: 40px;
+}
+
+.jList h3 {
+  padding-bottom: 0;
+}
+
+/*! ===== BRAND CSS=====*/
+.t-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.t-box img {
+  padding-top: 3rem;
+  margin: 1rem 1rem 1rem 0;
+  width: 100px;
+  object-fit: cover;
+}
+
+/* ! TEAM SECTION CSS */
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.f1-box {
+  border: 1px solid #c1e1d9;
+  width: 280px;
+  padding: 2rem 0;
+  border-radius: 20px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.f1-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+#key {
+  font-size: 0.8rem;
+  background-color: #edcfee;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.skills {
+  padding-bottom: 3rem;
+}
+
+/*! ===== FOOTER SECTION CSS =====*/
+
+footer {
+  background: #1f4a40;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.image > a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  flex-wrap: wrap;
+}
+
+.top .logo {
+  width: 40px;
+}
+
+.social i {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.bottom {
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom div a {
+  color: #fff;
+  line-height: 35px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/*! ===== MEDIA QUERIES =====*/
+
+@media (max-width: 699px) {
+  /** ===== HEADER QUERY =====*/
+
+  nav #menu {
+    background-color: #fff;
+    display: block;
+    width: 180px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    padding: 30px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  #menu.active {
+    right: 10px;
+    opacity: 1;
+  }
+
+  #menu li {
+    padding: 1rem;
+  }
+
+  #menu li a {
+    color: #1f4a40;
+  }
+
+  .w-btn {
+    margin: 20px 0 0 50px;
+    background-color: #1f4a40;
+    color: #fff;
+  }
+
+  #bar {
+    display: block;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  /** ===== HERO QUERY =====*/
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    align-items: start;
+    padding: 8rem 1rem;
+  }
+
+  .h-left {
+    width: 100%;
+  }
+
+  .h-left h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+
+  .h-right {
+    display: none;
+  }
+
+  /** ===== FEATURES QUERY =====*/
+
+  .features {
+    padding: 4rem 2rem;
+  }
+
+  .features > h2 {
+    line-height: 45px;
+  }
+
+  .features .fe-box {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .fe-box div {
+    width: 500px;
+  }
+
+  /** ===== JOB LISTING QUERY =====*/
+
+  .jobs {
+    margin: 0 2rem;
+  }
+
+  /* .jobs > h2,
+  .jobs > p {
+    margin: 0 2rem;
+  } */
+
+  .job-id {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .jobs .job-id li {
+    padding: 20px 30px;
+    text-wrap: nowrap;
+  }
+
+  .jobs-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .jList {
+    width: 48%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 1rem;
+    grid-gap: 15px;
+    padding: 2rem 1rem;
+    text-align: center;
+    justify-items: center;
+  }
+
+  /** ===== BRAND QUERY =====*/
+  .trust {
+    margin: 0 2rem;
+  }
+
+  .t-box img {
+    width: 120px;
+  }
+
+  /** ===== TEAM QUERY =====*/
+  .f1-box {
+    width: 48%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+
+  .skills {
+    padding-bottom: 1rem;
+  }
+
+  .team {
+    margin: 0 2rem;
+  }
+
+  /** ===== FOOTER QUERY =====*/
+
+  .footer1 {
+    margin: 0 2rem;
+  }
+
+  .social i {
+    margin: 1rem 1rem 0 0;
+  }
+
+  .bottom div {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}

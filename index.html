@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--! ===== BOX ICONS LINKING=====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--! ===== FAVICON LINKING=====-->
+    <link rel="icon" href="./images/logo.png" />
+
+    <!--! ===== CSS LINKING=====-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Khing Job Portal</title>
+  </head>
+  <body>
+    <!--!===== HEADER SECTION =====-->
+
+    <header>
+      <div class="navbar obj-width">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="" class="logo" /> Khing
+        </a>
+
+        <nav>
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jobs">Browse Jobs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button class="w-btn">Join</button>
+          </ul>
+        </nav>
+
+        <i class="bx bx-menu" id="bar"></i>
+      </div>
+    </header>
+
+    <!--!===== HERO SECTION =====-->
+
+    <section class="hero" id="home">
+      <div class="hero-box obj-width">
+        <div class="h-left">
+          <h1>Find the perfect freelance services for your business</h1>
+          <p>
+            Work with talented people at the most affordable price to get the
+            most out of your time and cost
+          </p>
+          <div class="search">
+            <input type="text" placeholder="Search your jobs here.." />
+            <a href="#" class="g-btn">Search</a>
+          </div>
+        </div>
+
+        <div class="h-right">
+          <img src="./images/hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--!===== FEATURES SECTION =====-->
+    <section class="features sec-space obj-width">
+      <h2>Need Something Done?</h2>
+      <p>Most viewed and all-time top-selling services</p>
+
+      <div class="fe-box">
+        <div>
+          <img src="./images/f3-1.png" />
+          <h3>Post a Job</h3>
+          <p>
+            It's free and easy to post a job. Simply fill in a title,
+            description.
+          </p>
+        </div>
+
+        <div>
+          <img src="./images/fe-2.png" />
+          <h3>Choose Freelances</h3>
+          <p>
+            It's free and easy to post a job. Simply fill in a title,
+            description.
+          </p>
+        </div>
+
+        <div>
+          <img src="./images/fe-3.png" />
+          <h3>Pay Safely</h3>
+          <p>
+            It's free and easy to post a job. Simply fill in a title,
+            description.
+          </p>
+        </div>
+
+        <div>
+          <img src="./images/fe-4.png" />
+          <h3>We're here to help</h3>
+          <p>
+            It's free and easy to post a job. Simply fill in a title,
+            description.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--!===== JOB LISTING SECTION =====-->
+    <section class="jobs sec-space obj-width" id="jobs">
+      <h2>Jobs in demand</h2>
+      <p>Most viewed and all-time top-selling services</p>
+
+      <ul class="job-id">
+        <li data-target="all" class="active">Recent Jobs</li>
+        <li data-target="freelancer">Freelancer</li>
+        <li data-target="fullTime">Full Time</li>
+        <li data-target="partTime">Part Time</li>
+      </ul>
+
+      <div class="jobs-container">
+        <li data-item="fullTime" class="jList">
+          <img src="./images/Google.png" alt="Google" />
+          <h3>Web Developer</h3>
+          <p>$900-1200</p>
+          <span id="key">Full Time</span>
+        </li>
+
+        <li data-item="freelancer" class="jList">
+          <img src="./images/Uber.png" alt="Uber" />
+          <h3>Freelancer</h3>
+          <p>$900-1200</p>
+          <span id="key">Freelancer</span>
+        </li>
+
+        <li data-item="partTime" class="jList">
+          <img src="./images/linkedin.png" alt="Linkedin" />
+          <h3>Business Associate</h3>
+          <p>$900-1200</p>
+          <span id="key">Part Time</span>
+        </li>
+
+        <li data-item="fullTime" class="jList">
+          <img src="./images/facebook.png" alt="Facebook" />
+          <h3>Digital Marketing</h3>
+          <p>$900-1200</p>
+          <span id="key">Full Time</span>
+        </li>
+
+        <li data-item="partTime" class="jList">
+          <img src="./images/twitter.png" alt="Twitter" />
+          <h3>User Experience</h3>
+          <p>$900-1200</p>
+          <span id="key">Part Time</span>
+        </li>
+      </div>
+    </section>
+
+    <!--!===== BRAND SECTION =====-->
+    <section class="trust sec-space obj-width">
+      <h2>Trusted by the world's best</h2>
+      <p>Most viewed and all-time top-selling services</p>
+
+      <div class="t-box">
+        <img src="./images/amazon.png" alt="amazon" />
+        <img src="./images/cisco.png" alt="Cisco" />
+        <img src="./images/lenovo.png" alt="Lenovo" />
+        <img src="./images/logitech.png" alt="Logitech" />
+        <img src="./images/apple.png" alt="Apple" />
+        <img src="./images/Uber.png" alt="Uber" />
+      </div>
+    </section>
+
+    <!--!===== TEAMS SECTION =====-->
+    <section class="team sec-space obj-width">
+      <h2>Highest Rated Freelancers</h2>
+      <p>Most viewed and all-time top-selling services</p>
+
+      <div class="team-container">
+        <div class="f1-box">
+          <img src="./images/2.png" alt="" />
+          <h3>Robert Fox</h3>
+          <div class="skills">
+            <span id="key">HTML</span>
+            <span id="key">CSS</span>
+            <span id="key">JS</span>
+          </div>
+          <a href="#" class="g-btn">View Profile</a>
+        </div>
+
+        <div class="f1-box">
+          <img src="./images/3.png" alt="" />
+          <h3>Bradley Hene</h3>
+          <div class="skills">
+            <span id="key">HTML</span>
+            <span id="key">CSS</span>
+            <span id="key">JS</span>
+          </div>
+          <a href="#" class="g-btn">View Profile</a>
+        </div>
+
+        <div class="f1-box">
+          <img src="./images/4.png" alt="" />
+          <h3>Christaine Abel</h3>
+          <div class="skills">
+            <span id="key">HTML</span>
+            <span id="key">CSS</span>
+            <span id="key">JS</span>
+          </div>
+          <a href="#" class="g-btn">View Profile</a>
+        </div>
+
+        <div class="f1-box">
+          <img src="./images/5.png" alt="" />
+          <h3>Theresa Webb</h3>
+          <div class="skills">
+            <span id="key">HTML</span>
+            <span id="key">CSS</span>
+            <span id="key">JS</span>
+          </div>
+          <a href="#" class="g-btn">View Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!--!===== FOOTER SECTION =====-->
+    <footer class="footer" id="contact">
+      <div class="obj-width footer1">
+        <div class="top">
+          <div class="image">
+            <a href="#"
+              ><img src="./images/logo.png" class="logo" />
+              <span>Khing</span>
+            </a>
+            <p>Search your desired jobs.</p>
+          </div>
+
+          <div class="social">
+            <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-behance"></i></a>
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div>
+            <h3>Project</h3>
+            <a href="#">Changelog</a>
+            <a href="#">Status</a>
+            <a href="#">License</a>
+            <a href="#">All versions</a>
+          </div>
+
+          <div>
+            <h3>Community</h3>
+            <a href="#">Github</a>
+            <a href="#">Issues</a>
+            <a href="#">Project</a>
+            <a href="#">Twitter</a>
+          </div>
+
+          <div>
+            <h3>Help</h3>
+            <a href="#">Support</a>
+            <a href="#">Troubleshooting</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div>
+            <h3>Others</h3>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">License</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
