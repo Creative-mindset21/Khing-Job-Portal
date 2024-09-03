@@ -342,7 +342,7 @@ footer {
 
 /*! ===== MEDIA QUERIES =====*/
 
-@media (max-width: 1450px) {
+@media (min-width: 700px) and (max-width: 1450px) {
   .obj-width {
     padding: 2rem 3rem;
   }
