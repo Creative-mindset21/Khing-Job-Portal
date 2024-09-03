@@ -493,8 +493,13 @@ footer {
   }
 
   /** ===== TEAM QUERY =====*/
+  .team-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
   .f1-box {
-    width: 48%;
+    width: 80%;
     text-align: center;
     border-radius: 10px;
     margin-top: 1rem;
