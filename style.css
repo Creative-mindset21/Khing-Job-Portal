@@ -342,6 +342,12 @@ footer {
 
 /*! ===== MEDIA QUERIES =====*/
 
+@media (max-width: 1450px) {
+  .obj-width {
+    padding: 2rem 3rem;
+  }
+}
+
 @media (max-width: 699px) {
   /** ===== HEADER QUERY =====*/
 
